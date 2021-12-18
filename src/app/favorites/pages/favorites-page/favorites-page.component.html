@@ -1,0 +1,20 @@
+<h1 class="title">Mis Favoritos!</h1>
+
+<hr />
+
+<h2 class="py-4 text-2xl font-bold">Personajes:</h2>
+<div class="w-full pb-4 overflow-x-auto whitespace-nowrap" *ngIf="favoritesChars.length > 0; else nomessage">
+  <div class="inline-block mr-4 w-80" *ngFor="let character of favoritesChars">
+    <app-card-character
+      [character]="character"
+      [favorite]="true"
+      (onDelete)="reload()"
+    ></app-card-character>
+  </div>
+</div>
+
+<ng-template #nomessage>
+  <div class="flex items-center justify-center w-full h-8">
+    No tienes ningun personaje favorito, puedes ir la lista de personajes!
+  </div>
+</ng-template>

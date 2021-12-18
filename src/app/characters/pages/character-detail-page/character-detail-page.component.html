@@ -1,0 +1,16 @@
+<h1 class="title">{{ character.name }}</h1>
+
+<hr class="text-green-500" />
+
+<div class="flex w-full">
+  <img [src]="character.image" alt="foto del personaje" class="w-1/3 mt-4" />
+  <div class="list">
+    <p>Nombre: {{ character.name }}</p>
+    <p>Estado: {{ character.status }}</p>
+    <p>Especie: {{ character.species }}</p>
+    <p>Genero: {{ character.gender }}</p>
+    <p>Lugar: {{ character.location.name }}</p>
+    <p>Cantidad de Episodios : {{ character.episode.length }}</p>
+    <button class="btn" (click)="back()">Regresar</button>
+  </div>
+</div>

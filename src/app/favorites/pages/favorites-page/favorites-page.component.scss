@@ -1,0 +1,5 @@
+.scroll {
+    @apply flex overflow-x-auto;
+    -webkit-overflow-scrolling: touch;
+    -ms-overflow-style: -ms-autohiding-scrollbar;
+}

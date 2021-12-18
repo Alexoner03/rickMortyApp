@@ -1,0 +1,7 @@
+.list {
+    @apply grow p-8 flex flex-col items-start justify-around
+}
+
+.list > p {
+    @apply text-4xl
+}

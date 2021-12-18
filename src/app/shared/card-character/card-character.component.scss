@@ -1,0 +1,10 @@
+.menu {
+    @apply relative z-50 w-full h-full flex justify-center items-end p-4;
+}
+.group {
+    @apply bg-white flex items-center border-2 border-green-500 rounded-xl;
+}
+
+.group > * {
+    @apply px-2 h-6 font-bold bg-opacity-80
+}
